@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   sprint2-barber-postgres:
     image: "postgres:9.6-alpine"
@@ -13,7 +14,7 @@ services:
       - POSTGRES_PASSWORD=dharani
 
   barberapp:
-    image: dhpotnuru/sprint2app:latest
+    image: dhpotnuru/sprint2barberapp:latest
     container_name: sprintbarberapp
     environment:
       - DB_SERVER=sprint2-barber-postgres
@@ -26,3 +27,5 @@ services:
       - sprint2-barber-postgres
 volumes:
   barberapp-db:
+  
+ 

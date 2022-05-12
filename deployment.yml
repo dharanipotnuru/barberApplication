@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: sprint2
-        image: dhpotnuru/sprint2app:latest
+        image: dhpotnuru/sprint2barberapp:latest
         imagePullPolicy: IfNotPresent
         ports:
           - name: http
@@ -41,4 +41,23 @@ spec:
   - name: http
     port: 8235
     targetPort: 8235
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
